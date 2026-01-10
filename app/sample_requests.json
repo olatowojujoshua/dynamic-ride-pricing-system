@@ -1,0 +1,88 @@
+{
+  "sample_requests": [
+    {
+      "request_id": "demo_001",
+      "number_of_riders": 15,
+      "number_of_drivers": 8,
+      "location_category": "Urban",
+      "customer_loyalty_status": "Gold",
+      "number_of_past_rides": 42,
+      "average_ratings": 4.7,
+      "time_of_booking": "Evening",
+      "vehicle_type": "Premium",
+      "expected_ride_duration": 25
+    },
+    {
+      "request_id": "demo_002",
+      "number_of_riders": 8,
+      "number_of_drivers": 12,
+      "location_category": "Suburban",
+      "customer_loyalty_status": "Silver",
+      "number_of_past_rides": 15,
+      "average_ratings": 4.2,
+      "time_of_booking": "Morning",
+      "vehicle_type": "Economy",
+      "expected_ride_duration": 15
+    },
+    {
+      "request_id": "demo_003",
+      "number_of_riders": 25,
+      "number_of_drivers": 5,
+      "location_category": "Urban",
+      "customer_loyalty_status": "Platinum",
+      "number_of_past_rides": 87,
+      "average_ratings": 4.9,
+      "time_of_booking": "Evening",
+      "vehicle_type": "Luxury",
+      "expected_ride_duration": 35
+    },
+    {
+      "request_id": "demo_004",
+      "number_of_riders": 3,
+      "number_of_drivers": 10,
+      "location_category": "Rural",
+      "customer_loyalty_status": "Silver",
+      "number_of_past_rides": 8,
+      "average_ratings": 3.8,
+      "time_of_booking": "Night",
+      "vehicle_type": "Economy",
+      "expected_ride_duration": 20
+    },
+    {
+      "request_id": "demo_005",
+      "number_of_riders": 18,
+      "number_of_drivers": 6,
+      "location_category": "Urban",
+      "customer_loyalty_status": "Gold",
+      "number_of_past_rides": 56,
+      "average_ratings": 4.5,
+      "time_of_booking": "Afternoon",
+      "vehicle_type": "Premium",
+      "expected_ride_duration": 30
+    }
+  ],
+  "scenario_configs": {
+    "conservative": {
+      "type": "multiplier",
+      "multiplier": 0.9,
+      "demand_elasticity": -0.3,
+      "description": "Conservative pricing with 10% discount"
+    },
+    "aggressive_surge": {
+      "type": "surge_aggressive",
+      "surge_multiplier": 2.0,
+      "demand_elasticity": -0.7,
+      "description": "Aggressive surge pricing during high demand"
+    },
+    "time_based": {
+      "type": "time_based",
+      "demand_elasticity": -0.5,
+      "description": "Time-based pricing with peak hour premiums"
+    },
+    "loyalty_focused": {
+      "type": "loyalty_focused",
+      "demand_elasticity": -0.4,
+      "description": "Loyalty-focused pricing with tier discounts"
+    }
+  }
+}

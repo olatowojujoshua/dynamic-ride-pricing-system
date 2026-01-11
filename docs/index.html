@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Ride Pricing System</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #1f77b4;
+        }
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin: 0;
+        }
+        .demo-section {
+            margin-bottom: 40px;
+        }
+        .demo-button {
+            display: inline-block;
+            background: #1f77b4;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        .demo-button:hover {
+            background: #155a8c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(31, 119, 180, 0.4);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #1f77b4;
+        }
+        .feature-card h3 {
+            color: #1f77b4;
+            margin-bottom: 15px;
+        }
+        .feature-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-card li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .feature-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .github-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .github-link a {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: #1f77b4;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            border: 2px solid #1f77b4;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .github-link a:hover {
+            background: #1f77b4;
+            color: white;
+        }
+        .tech-stack {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        .tech-stack h3 {
+            color: #1f77b4;
+            margin-bottom: 20px;
+        }
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Dynamic Ride Pricing System</h1>
+            <p>A comprehensive machine learning system for dynamic ride pricing that optimizes fares based on real-time market conditions, demand-supply dynamics, and customer segmentation.</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>🚀 Live Demo</h2>
+            <p>Experience the dynamic pricing system in action with our interactive Streamlit application.</p>
+            <div style="text-align: center;">
+                <a href="https://olatowojujoshua-dynamic-ride-pricing-system.streamlit.app/" class="demo-button" target="_blank">
+                    Launch Live Demo
+                </a>
+                <a href="https://github.com/olatowojujoshua/dynamic-ride-pricing-system" class="demo-button" target="_blank">
+                    View Source Code
+                </a>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🤖 Machine Learning Models</h3>
+                <ul>
+                    <li>Baseline Fare Prediction with ensemble methods</li>
+                    <li>Surge Pricing with quantile regression</li>
+                    <li>Real-time demand-supply analysis</li>
+                    <li>Model calibration and validation</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Business Intelligence</h3>
+                <ul>
+                    <li>Revenue simulation and what-if analysis</li>
+                    <li>Price stability and volatility monitoring</li>
+                    <li>Fairness metrics and compliance</li>
+                    <li>Customer satisfaction tracking</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>⚖️ Pricing Constraints</h3>
+                <ul>
+                    <li>Business rules and price boundaries</li>
+                    <li>Loyalty discount management</li>
+                    <li>Location-based premium adjustments</li>
+                    <li>Fairness engine for equitable pricing</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <h3>🔧 Production Ready</h3>
+                <ul>
+                    <li>Modular and scalable architecture</li>
+                    <li>Comprehensive error handling</li>
+                    <li>Professional logging and monitoring</li>
+                    <li>Extensive testing and validation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tech-stack">
+            <h3>🛠️ Technology Stack</h3>
+            <div class="tech-badges">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Streamlit</span>
+                <span class="tech-badge">scikit-learn</span>
+                <span class="tech-badge">XGBoost</span>
+                <span class="tech-badge">LightGBM</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">Plotly</span>
+                <span class="tech-badge">NumPy</span>
+            </div>
+        </div>
+
+        <div class="github-link">
+            <a href="https://github.com/olatowojujoshua/dynamic-ride-pricing-system" target="_blank">
+                📦 View on GitHub
+            </a>
+        </div>
+    </div>
+</body>
+</html>

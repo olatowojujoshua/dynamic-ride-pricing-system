@@ -2,7 +2,7 @@
 
 A comprehensive machine learning system for dynamic ride pricing that optimizes fares based on real-time market conditions, demand-supply dynamics, and customer segmentation.
 
-## 🎯 Project Overview
+##  Project Overview
 
 This system addresses the complex "Complex Master Question" of building a dynamic ride-pricing system that:
 
@@ -11,7 +11,7 @@ This system addresses the complex "Complex Master Question" of building a dynami
 3. **Applies pricing constraints** and fairness across loyalty tiers and locations
 4. **Validates performance** using forecast accuracy and business metrics
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 dynamic-ride-pricing-system/
@@ -30,33 +30,33 @@ dynamic-ride-pricing-system/
 └── tests/                       # Unit tests
 ```
 
-## 🚀 Key Features
+##  Key Features
 
-### 🤖 Machine Learning Models
+###  Machine Learning Models
 - **Baseline Fare Model**: Predicts base prices using ensemble methods (Random Forest, XGBoost, LightGBM)
 - **Surge Pricing Model**: Quantile regression for demand-supply based surge multipliers
 - **Ensemble Approach**: Combines multiple models for robustness
 
-### 📊 Feature Engineering
+###  Feature Engineering
 - **Time Features**: Rush hour detection, cyclical encoding, demand buckets
 - **Pressure Index**: Real-time demand-supply ratio calculations
 - **Location Features**: Urban density effects and geographic premiums
 - **Customer Segmentation**: Loyalty tier analysis and behavioral features
 - **Interaction Features**: Cross-dimensional feature combinations
 
-### ⚖️ Pricing Constraints & Fairness
+###  Pricing Constraints & Fairness
 - **Business Rules**: Price floors, ceilings, and stability constraints
 - **Fairness Engine**: Ensures equitable pricing across segments
 - **Loyalty Discounts**: Tiered discount system for repeat customers
 - **Location Premiums**: Geographic price adjustments
 
-### 📈 Business Intelligence
+###  Business Intelligence
 - **Revenue Simulation**: What-if analysis for pricing strategies
 - **Stability Analysis**: Price volatility and consistency monitoring
 - **Fairness Metrics**: Disparity detection and compliance monitoring
 - **Performance Dashboard**: Real-time KPI tracking
 
-## 🛠️ Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 python -c "import kagglehub; path = kagglehub.dataset_download('arashnic/dynamic-pricing-dataset')"
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Run the Streamlit Demo
 ```bash
@@ -125,7 +125,7 @@ response = engine.predict_price(request)
 print(f"Predicted Price: ${response.final_price:.2f}")
 ```
 
-## 📊 Data Features
+##  Data Features
 
 ### Core Features
 - **Number_of_Riders**: Current demand for rides
@@ -147,7 +147,7 @@ print(f"Predicted Price: ${response.final_price:.2f}")
 - **Location Premiums**: Geographic price factors
 - **Loyalty Discounts**: Customer tier benefits
 
-## 🔬 Model Performance
+##  Model Performance
 
 ### Baseline Model Metrics
 - **MAPE**: < 15% (target achieved)
@@ -164,7 +164,7 @@ print(f"Predicted Price: ${response.final_price:.2f}")
 - **Price Stability**: Controlled volatility
 - **Fairness Compliance**: Meets regulatory requirements
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 ### Model Accuracy
 - **RMSE/MAE**: Standard regression metrics
@@ -186,7 +186,7 @@ print(f"Predicted Price: ${response.final_price:.2f}")
 - **Surge Frequency**: Dynamic pricing patterns
 - **Anomaly Detection**: Outlier monitoring
 
-## 🧪 Testing
+### Testing
 
 ### Run Unit Tests
 ```bash
@@ -198,7 +198,7 @@ python -m pytest tests/ -v
 python -m pytest --cov=src tests/
 ```
 
-## 📚 Documentation
+##  Documentation
 
 ### Notebooks
 1. **01_data_overview.ipynb**: Data loading and quality assessment
@@ -216,7 +216,7 @@ python -m pytest --cov=src tests/
 - **Pricing Engine**: `src/pricing/` modules
 - **Evaluation**: `src/evaluation/` modules
 
-## 🎛️ Configuration
+##  Configuration
 
 ### System Configuration
 Edit `src/config.py` to adjust:
@@ -231,7 +231,7 @@ Edit `src/config.py` to adjust:
 - **Price Ceilings**: Maximum ride prices ($100.0)
 - **Loyalty Discounts**: Tier-based reductions (5-15%)
 
-## 🚀 Deployment
+##  Deployment
 
 ### Production Setup
 1. **Model Training**: Train models on historical data
@@ -246,7 +246,7 @@ Edit `src/config.py` to adjust:
 - **Business KPIs**: Revenue and satisfaction
 - **Fairness Compliance**: Ongoing disparity monitoring
 
-## 🤝 Contributing
+##  Contributing
 
 ### Development Workflow
 1. Fork the repository
@@ -261,31 +261,31 @@ Edit `src/config.py` to adjust:
 - Update documentation
 - Ensure all tests pass
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Dataset provided by [Kaggle - Dynamic Pricing Dataset](https://www.kaggle.com/datasets/arashnic/dynamic-pricing-dataset)
 - Inspiration from industry research on dynamic pricing and revenue management
 - Machine learning libraries: scikit-learn, XGBoost, LightGBM
 
-## 📞 Contact
+##  Contact
 
 - **Project Lead**: JOSHUA OLATOWOJU OLADAYO 
 - **Email**: Olatowoju@.com
 
 ---
 
-## 🎯 Key Achievements
+##  Key Achievements
 
-✅ **Comprehensive System**: End-to-end dynamic pricing pipeline  
-✅ **Business Impact**: 5-15% projected revenue lift  
-✅ **Fairness Compliant**: Meets regulatory requirements  
-✅ **Production Ready**: Robust error handling and monitoring  
-✅ **Scalable Architecture**: Modular and maintainable design  
-✅ **Extensive Testing**: Unit tests and validation notebooks  
-✅ **Interactive Demo**: Streamlit application for stakeholders  
+ **Comprehensive System**: End-to-end dynamic pricing pipeline  
+ **Business Impact**: 5-15% projected revenue lift  
+ **Fairness Compliant**: Meets regulatory requirements  
+ **Production Ready**: Robust error handling and monitoring  
+ **Scalable Architecture**: Modular and maintainable design  
+ **Extensive Testing**: Unit tests and validation notebooks  
+ **Interactive Demo**: Streamlit application for stakeholders  
 
 **This system successfully addresses the complex master question of building a dynamic ride-pricing system that balances accuracy, revenue optimization, and fairness while providing real-time pricing recommendations.**
